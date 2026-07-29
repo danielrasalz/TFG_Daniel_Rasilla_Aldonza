@@ -2,7 +2,7 @@
 A continuación se  muestra el código empleado para la obtenciónn de la figura 4.4 (derecha). En el, se seleccionan los sucesos 
 correspondientes a la desintegración invisible del H en 4 neutrinos y al decaimiento leptónico del par de tops. Posteriormente, 
 se calcula elmoemtno transversal faltante asociado a los neutrinos y se realiza la comparación entre las curvas correspondientes
-al decaimiento del H, al decaimiento de lso tops, y a la combinación de estos.
+al decaimiento del H, al decaimiento de los tops, y a la combinación de estos.
 '''
 
 import ROOT as r
