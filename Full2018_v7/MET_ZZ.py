@@ -154,7 +154,7 @@ leyenda.SetBorderSize(0)
 leyenda.SetTextSize(0.032)
 leyenda.Draw()
 
-# Guardado en formatos estándar
+# Guardado 
 canvas.SaveAs(f"{ruta_guardado}/comparacion_ptmiss_3c_h_zz_4nu_2.png")
 canvas.SaveAs(f"{ruta_guardado}/comparacion_ptmiss_3c_h_zz_4nu_2.pdf")
 
