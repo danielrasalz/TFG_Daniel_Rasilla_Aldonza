@@ -73,7 +73,7 @@ for i, event in enumerate(chain):
 
                         total_Z_analizados += 1
 
-                        # 4. Clasificación Macro Rigurosa (.count() >= 2)
+                        # 4. Clasificación (.count() >= 2)
                         n_quarks = sum(hijos_del_z.count(q) for q in [1, 2, 3, 4, 5])
 
                         has_charged_leptons = (hijos_del_z.count(11) >= 2 or
@@ -90,7 +90,7 @@ for i, event in enumerate(chain):
                             z_macro_counts["leptonic"] += 1
                         elif has_neutrinos:
                             z_macro_counts["invisible"] += 1
-                            # NUEVO: Miramos cuál de los tres tipos de neutrino sumó
+                            
                             if hijos_del_z.count(12) >= 2:
                                 nu_counts["nu_e"] += 1
                             elif hijos_del_z.count(14) >= 2:
@@ -133,9 +133,9 @@ if total_Z_analizados > 0:
         print("  No se registraron desintegraciones a neutrinos.")
     print("-" * 45)
     print("\n" + "-"*50)
-    print("CONTENIDO EN 'OTROS' (Casos exóticos restantes):")
+    print("CONTENIDO EN 'OTROS':")
     if not ids_en_otros_z:
-        print("La categoría 'Otros' está limpia (0.00%).")
+        print("La categoría 'Otros' está limpia.")
     else:
         for pid, cant in ids_en_otros_z.items():
             print(f" PDG ID en 'Otros': {pid:4} | Cantidad: {cant}")
