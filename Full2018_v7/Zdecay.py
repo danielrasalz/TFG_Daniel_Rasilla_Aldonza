@@ -5,7 +5,7 @@ Código empleado para obtener los BR de los decaimientos del Z mostrados en la t
 import ROOT as r
 
 chain = r.TChain("Events")
-ruta = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MCCorr>
+ruta = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MCCorr2018v7__l2loose__l2tightOR2018v7/nanoLatino_ttHToNonbb_M125__part*.root"
 chain.Add(ruta)
 
 
