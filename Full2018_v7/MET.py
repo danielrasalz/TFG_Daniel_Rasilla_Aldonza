@@ -16,7 +16,7 @@ ruta_tth = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102
 chain_tth.Add(ruta_tth)
 
 chain_ttbar = r.TChain("Events")
-ruta_ttbar = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__>
+ruta_ttbar = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MCCorr2018v7__l2loose__l2tightOR2018v7/nanoLatino_TTTo2L2Nu__part*.root"
 chain_ttbar.Add(ruta_ttbar) # Nota: Asegúrate de añadir la ruta correcta a chain_ttbar si la tienes separada
 
 
