@@ -12,7 +12,7 @@ r.gROOT.SetBatch(True)
 
 # 1. Configuración de rutas
 chain_tth = r.TChain("Events")
-ruta_tth = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MC>
+ruta_tth = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MCCorr2018v7__l2loose__l2tightOR2018v7/nanoLatino_ttHToNonbb_M125__part*.root"
 chain_tth.Add(ruta_tth)
 
 chain_ttbar = r.TChain("Events")
