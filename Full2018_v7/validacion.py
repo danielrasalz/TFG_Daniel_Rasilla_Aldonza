@@ -5,7 +5,7 @@ import ROOT as r
 
 # 1. TChain para unir los 23 archivos
 chain = r.TChain("Events")
-ruta = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MCCorr/*.root"
+ruta =  "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MCCorr2018v7__l2loose__l2tightOR2018v7/nanoLatino_ttHToNonbb_M125__part*.root"
 chain.Add(ruta)
 
 # 2. Archivo de salida
