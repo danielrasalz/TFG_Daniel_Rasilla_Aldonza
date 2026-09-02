@@ -1,4 +1,8 @@
-# variables
+"""
+Código que define las variables empleadas en mkShapes
+
+Adaptado de: https://github.com/piedraj/HEP/blob/main/Full2018_v7/variables.py
+"""
 
 # 0 = not fold (default)
 # 1 = fold underflow bin
