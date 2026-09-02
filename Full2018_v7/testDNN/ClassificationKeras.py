@@ -36,14 +36,14 @@ if not isfile('tmva_class_example.root'):
 # 1. Ruta
 path = "/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv7_Full2018v7/MCl1loose2018v7__MCCorr2018v7__l2loose__l2tightOR2018v7/"
 
-# 2. Creamos las cadenas
+# 2. Cadenas
 signal = r.TChain("Events")
 background = r.TChain("Events")
 
-# 3. Añadimos la señal 
+# 3. Señal 
 signal.Add(path + "nanoLatino_ttHToNonbb_M125__part*.root")
 
-# 4. Añadimos los fondos 
+# 4. Fondos
 background.Add(path + "nanoLatino_TTTo2L2Nu__part*.root")
 dataloader = TMVA.DataLoader('dataset_segun_ttH')
 
@@ -55,7 +55,7 @@ dataloader.AddVariable("PuppiMET_pt", "F")
 dataloader.AddSignalTree(signal, 1.0)
 dataloader.AddBackgroundTree(background, 1.0)
 
-# Lista de cortes extraída de tu cuts.py
+# Lista de cortes 
 cortes_lista = [
     'Lepton_pdgId[0]*Lepton_pdgId[1] == -11*13', # Canal e-mu
     'nLepton == 2',                              # Al menos 2 leptones
@@ -66,7 +66,7 @@ cortes_lista = [
     'PuppiMET_pt > 20.'                          # MET Puppi
 ]
 
-# Unimos todo con "&&" para que ROOT lo entienda
+
 my_cut = " && ".join(cortes_lista)
 dataloader.PrepareTrainingAndTestTree(
     my_cut,
