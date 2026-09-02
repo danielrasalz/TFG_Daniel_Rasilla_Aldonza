@@ -42,7 +42,7 @@ for paso in pasos:
             print(f"No se encontró {path}")
             continue
 
-        # 2. Sumamos de los fondos
+        # 2. Suma de los fondos
         for b_name in muestras_fondo:
             path = f"{paso}/events/histo_{b_name}"
             h = file.Get(path)
@@ -53,7 +53,7 @@ for paso in pasos:
         S_plus_B = S + B
         fom = S / math.sqrt(S_plus_B) if S_plus_B > 0 else 0
 
-        # 4. Imprimimos la fila
+        # 4. Contrucción de las filas
         print(f"{paso:22} | {s_name:20} | {S:12.2f} | {B:12.2f} | {S_plus_B:12.2f} | {fom:12.3g}")
 
     print("-" * 120)
