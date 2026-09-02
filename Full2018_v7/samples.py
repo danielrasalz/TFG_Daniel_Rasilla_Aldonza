@@ -255,6 +255,7 @@ samples['ttH_nonbb'] = {
     'FilesPerJob': 1,
 }
 
+# Filtrados añadidos de la señal:
 samples['ttH_ZZ4nu'] = {
     'name': nanoGetSampleFiles(mcDirectory, 'ttHToNonbb_M125'),  # Mismos archivos
     'weight': mcCommonWeight + '* (Hdecay == 1)',  # Peso adicional para filtrar
