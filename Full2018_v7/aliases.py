@@ -1,3 +1,9 @@
+"""
+Código con los alias empleados em mkShapes
+
+Adaptado de: https://github.com/piedraj/HEP/blob/main/Full2018_v7/aliases.py
+"""
+
 import os
 import copy
 import inspect
