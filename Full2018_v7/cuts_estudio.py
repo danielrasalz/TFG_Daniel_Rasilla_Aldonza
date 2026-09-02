@@ -1,5 +1,5 @@
 '''
-Archivo con los cortes en forma secuecnial para poder comprobar el poder discriminante de cada uno
+Archivo con los cortes en forma secuencial para poder comprobar el poder discriminante de cada uno
 '''
 preselections = '1'
 cuts = {}
@@ -7,7 +7,7 @@ cuts = {}
 
 cuts['step0_skim'] = 'nLepton >= 2'
 
-cuts['ch_3lep'] = cuts['step0_skim'] + ' && Lepton_pdgId[0]*Lepton_pdgId[1] < 0'+ ' && nLepton >= 2 && Alt(Lepton_pt,2,>
+cuts['ch_3lep'] = cuts['step0_skim'] + ' && Lepton_pdgId[0]*Lepton_pdgId[1] < 0'+ ' && nLepton >= 2 && Alt(Lepton_pt,2, 0) < 10'
 
 cuts['pt_cuts'] = cuts['ch_3lep'] + ' && Lepton_pt[0] > 25 && Lepton_pt[1] > 20'
 
