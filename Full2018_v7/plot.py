@@ -1,3 +1,9 @@
+"""
+Código empleado para configurar los diferentes histogramas de mkShapes
+
+Adaptado de: https://github.com/piedraj/HEP/blob/main/Full2018_v7/plot.py
+"""
+
 groupPlot = {}
 plot = {}
 
