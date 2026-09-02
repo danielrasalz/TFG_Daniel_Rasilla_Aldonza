@@ -1,2 +1,2 @@
 # TFG_Daniel_Rasilla_Aldonza
-Código empleado en el desarrollo de mi TFG
+En este repositorio se muestran los diferentes códigos empleados en la realizaciónn de mi TFG. 
