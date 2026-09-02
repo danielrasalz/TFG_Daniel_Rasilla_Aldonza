@@ -1,6 +1,6 @@
 '''
 Código empleado para obtener la tabla 4.4 de comparación de la FOM para las distintas señales (al final se decidió no mostrar 
-las filas correspondientes a la señal "ttH_ZZ"
+las filas correspondientes a la señal "ttH_ZZ")
 '''
 
 import ROOT as r
