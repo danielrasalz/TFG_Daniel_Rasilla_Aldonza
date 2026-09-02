@@ -1,3 +1,9 @@
+"""
+Código en el que se definen las muestras de mkShapes
+
+Adaptado de: https://github.com/piedraj/HEP/blob/main/Full2018_v7/samples.py
+"""
+
 import os, glob
 import inspect
 from mkShapesRDF.lib.search_files import SearchFiles
