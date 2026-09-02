@@ -1,4 +1,8 @@
+"""
+Código en el que se definen los cortes empleados en mkShapes
 
+Adaptado de : https://github.com/piedraj/HEP/blob/main/Full2018_v7/cuts.py
+"""
 cuts = {}
 
 # --- 1. Definición de la Preselección (Criterios Base) ---
