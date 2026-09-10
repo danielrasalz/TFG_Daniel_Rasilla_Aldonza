@@ -18,7 +18,7 @@ mc = [skey for skey in samples if skey not in ('Fake', 'DATA')]
 eleWP = 'mvaFall17V1Iso_WP90'
 muWP  = 'cut_Tight_HWWW'
 
-# --- 3. Definición de B-tagging (Basado en la tabla de Nico) ---
+# --- 3. Definición de B-tagging  ---
 bAlgo = 'DeepB'   # Algoritmo DeepCSV
 bWP   = '0.4184'  # Medium Working Point para 2018
 bSF   = 'deepcsv' # Nombre del Scale Factor oficial
@@ -27,7 +27,7 @@ bSF   = 'deepcsv' # Nombre del Scale Factor oficial
 aliases['bVeto'] = {
     'expr': 'Sum(CleanJet_pt > 20. && abs(CleanJet_eta) < 2.4 && Take(Jet_btag{}, CleanJet_jetIdx) > {}) == 0'.format(bAlgo, bWP)
 }
-# --- Definición de bIndexing (asegúrate de que solo esté una vez) ---
+# --- Definición de bIndexing  ---
 aliases['bIndexing'] = {
     'expr': 'Nonzero(CleanJet_pt > 20. && abs(CleanJet_eta) < 2.4 && Take(Jet_btagDeepB, CleanJet_jetIdx) > 0.4184)'
   }
