@@ -1,2 +1,2 @@
 # TFG_Daniel_Rasilla_Aldonza
-En este repositorio se muestran los diferentes códigos empleados en la realizaciónn de mi TFG. 
+En este repositorio se muestran los diferentes códigos empleados en la realización de mi TFG. Los códigos empleados para la obtención de resultados a través de mkShapes se encuentran dentro de la carpeta principal Full2018_v7. Así mismo, dentro de esta se localizan dos subcarpetas: macros y testDNN. En la primera de ellas se encuentra el código empleado para el filtrado de la señal, mientras que en la segunda se encuentran los scripts utilizados en la sección de análisis multivariante.
