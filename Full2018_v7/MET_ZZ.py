@@ -101,7 +101,7 @@ for i, event in enumerate(chain_tth):
         sum_py_t = sum(event.GenPart_pt[idx] * r.TMath.Sin(event.GenPart_phi[idx]) for idx in nu_solo_top_indices)
         h_met_solo_top.Fill(r.TMath.Sqrt(sum_px_t**2 + sum_py_t**2))
 
-        # 3. Curva NEGRA: Suma VECTORIAL CONJUNTA (6 neutrinos en total: 4 del Higgs + 2 del Top)
+        # 3. Curva NEGRA: Suma vectorial conjunta (6 neutrinos en total: 4 del Higgs + 2 del Top)
         indices_totales = nu_solo_zz_indices + nu_solo_top_indices
         sum_px_tot = sum(event.GenPart_pt[idx] * r.TMath.Cos(event.GenPart_phi[idx]) for idx in indices_totales)
         sum_py_tot = sum(event.GenPart_pt[idx] * r.TMath.Sin(event.GenPart_phi[idx]) for idx in indices_totales)
