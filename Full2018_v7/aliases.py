@@ -11,7 +11,6 @@ configurations = os.path.realpath(inspect.getfile(inspect.currentframe())) # thi
 aliases = {}
 #r.gSystem.Load("/afs/cern.ch/user/d/drasilla/mkShapesRDF/HEP/Full2018_v7/macros/HdecayProducer_cc.so")
 # --- 1. Definición de muestras de MC ---
-# Esto identifica automáticamente qué muestras no son datos reales para aplicarles pesos.
 mc = [skey for skey in samples if skey not in ('Fake', 'DATA')]
 
 # --- 2. Working Points (Estándares de 2018) ---
