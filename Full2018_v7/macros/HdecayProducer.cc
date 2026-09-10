@@ -57,7 +57,7 @@ int HdecayProducer(
             if (hijos_ZZ.size() == 2) {
 
                 // 5: Comprobar si ambos Z decaen solo a neutrinos
-                bool solo_neutrinos = true;  // Empezamos asumiendo que es invisible
+                bool solo_neutrinos = true;  
 
                 // Bucle sobre cada Z encontrado
                 for (int z_idx : hijos_ZZ) {
